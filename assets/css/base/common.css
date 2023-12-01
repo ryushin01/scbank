@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+/* 
+  common.css
+  - 이 파일은 해당 서비스에서 공통으로 쓰이는 CSS properties와 values를 모아 놓는 파일입니다.
+*/
+
+@font-face {
+    font-family: "SUIT";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2")
+        format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "SUIT", sans-serif;
+}

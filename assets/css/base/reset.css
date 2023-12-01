@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/* 
+  reset.css
+  - 이 파일은 여러 웹 브라우저 환경에서 동일한 스타일링을 하기 위해 웹 브라우저에서 기본적으로 내려주는 스타일링(User Agent StyleSheet)를 초기화하기 위한 목적으로 생성되었습니다.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
