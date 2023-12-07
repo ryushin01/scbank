@@ -1,19 +1,129 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>SC제일은행</title>
-        <!-- 
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SC제일은행</title>
+  <!-- 
           [Tip] CSS 파일의 import 순서
           - reset.css 뒤에 common.css를 작성해야 합니다. 공통 요소가 초기화될 수도 있기 때문입니다.
           - 마지막 순서로 페이지별 필요한 CSS가 담긴 파일을 위치시킵니다.
         -->
-        <link href="../assets/css/base/reset.css" rel="stylesheet" />
-        <link href="../assets/css/base/common.css" rel="stylesheet" />
-        <link href="../assets/css/pages/main.css" rel="stylesheet" />
-    </head>
-    <body>
-        <!-- 작업 영역 -->
-    </body>
+  <link href="../assets/css/base/reset.css" rel="stylesheet" />
+  <link href="../assets/css/base/common.css" rel="stylesheet" />
+  <link href="../assets/css/pages/main.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header-wrap-inner">
+
+      <h1 class="main-logo">
+        <a href="javascript:void(0);">
+          <img src="../assets/images/mainlogo.png" alt="SC제일은행 로고" />
+        </a>
+      </h1>
+
+      <nav>
+        <ul class="nav-list-inner">
+          <li class="a">
+            <a href="javascript:void(0);">금융상품몰</a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">인터넷뱅킹</a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">기업고객</a>
+          </li>
+          <li>
+            <a href="javascript:void(0);">서비스안내</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-items-right-inner">
+        <ul class="header-list-container-right">
+          <li>
+            <button type="button" class="header-login-btn">로그인</button>
+          </li>
+          <li>
+            <a class="header-list-item" href="javascript:void(0);">지점검색</a>
+          </li>
+          <li>
+            <a class="header-list-item" href="javascript:void(0);">고객센터</a>
+          </li>
+          <li>
+            <a class="header-list-item" href="javascript:void(0);">ENG</a>
+          </li>
+          <li>
+            <button type="button" class="find-btn">
+              <img src="../assets/images/icons8-돋보기.svg" alt="찾기 돋보기 이미지">
+            </button>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+  </header>
+  <!-- 스와이퍼 메인 컨테이너입니다. -->
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+
+      <!-- 스와이퍼 컨텐트 자리입니다. -->
+      <div class="swiper-slide">
+        <!-- 내용 섹션이 들어간다 -->
+      </div>
+
+      <div class="swiper-slide">
+        <!-- 내용 섹션이 들어간다 -->
+      </div>
+
+      <div class="swiper-slide">
+        <!-- 내용 섹션이 들어간다 -->
+      </div>
+
+    </div>
+    <!-- 스와이퍼에 페이지네이션 입니다. -->
+    <div class="swiper-pagination"></div>
+
+    <!-- 스와이퍼 네비게이션 버튼입니다 -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+  <!-- 스크립트를 CDN방식으로 적용시켜줍니다 -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- 스와이퍼에대한 컨트롤스크립트입니다 -->
+  <script>
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters 
+      direction: 'horizontal',
+      loop: true,
+      autoplay: true,
+
+      // If we need pagination 페이지네이션
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      // Navigation arrows 버튼
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+
+
+
+
+
+</body>
+
 </html>

@@ -1,1 +1,73 @@
 @charset "UTF-8";
+
+/* 헤더 영역 컨테이너 */
+.header-wrap-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 900px;
+  height: 60px;
+  margin: 0 auto;
+}
+/* 로고 컨테이너 */
+.main-logo {
+  width: 130px;
+  height: 50px;
+}
+/* 네브리스트 컨테이너 */
+.nav-list-inner {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+  font-weight: 800;
+}
+/* 최상단 헤더 오른쪽 리스트아이템 메뉴 컨테이너 */
+.header-items-right-inner {
+  display: flex;
+  gap: 10px;
+}
+/* 로그인버튼 */
+.header-login-btn {
+  background-color: #18abeb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  height: 25px;
+}
+/* 헤더에 오른쪽 리스트들 */
+.header-list-container-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+/* 로그인을 제외한 리스트안에있는 li아이템 */
+.header-list-item {
+  font-size: 12px;
+  color: #555;
+}
+/*돋보기 찾기 이미지 버튼*/
+.find-btn {
+  border: none;
+  background-color: white;
+}
+/* 스와이퍼 사이즈 */
+.swiper {
+  width: 100%;
+  height: 300px;
+}
+/* 스와이퍼 왼쪽버튼 */
+.swiper-button-prev {
+  margin-left: 200px;
+}
+/* 스와이퍼 오른쪽버튼 */
+.swiper-button-next {
+  margin-right: 200px;
+}
+/* 스와이퍼 컨텐트 사이즈 */
+.swiper-slide {
+  width: 100%;
+  background-image: url(../../images/bg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
