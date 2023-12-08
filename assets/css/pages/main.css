@@ -54,20 +54,68 @@
 /* 스와이퍼 사이즈 */
 .swiper {
   width: 100%;
-  height: 300px;
+  height: 400px;
 }
-/* 스와이퍼 왼쪽버튼 */
-.swiper-button-prev {
-  margin-left: 200px;
-}
-/* 스와이퍼 오른쪽버튼 */
-.swiper-button-next {
-  margin-right: 200px;
+/* 스와이퍼 페이지네이션 위치 */
+.swiper-pagination {
+  margin-bottom: 25px;
 }
 /* 스와이퍼 컨텐트 사이즈 */
 .swiper-slide {
-  width: 100%;
   background-image: url(../../images/bg.png);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+/* 스와이퍼 바로밑 메뉴 영역입니다 */
+.main-menu-area {
+  z-index: 100;
+  width: 100%;
+  position: absolute;
+  top: 438px;
+}
+/* 리스트를 감싸는 스타일 */
+.main-menu-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+  border: 1px solid white;
+  box-shadow: 1px 1px 1px 1px;
+  background-color: white;
+  gap: 10px;
+  width: 800px;
+  height: 40px;
+}
+/* a태그 사이사이 들어가는 투명 bar  */
+.bar {
+  height: 15px;
+  border: 1px solid #d7d7d7;
+}
+/* 스와이퍼 내용 섹션 스타일링 */
+.event-inner {
+  width: 800px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+}
+.section-wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.event-details-btn {
+  border: 1px solid white;
+  padding: 10px 20px;
+  background-color: transparent;
+  cursor: pointer;
+  & > a {
+    color: white;
+    font-size: 12px;
+  }
 }
